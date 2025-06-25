@@ -1,0 +1,76 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 6%;
+    background-image: linear-gradient(179deg, rgba(0, 0, 0, 0.7), 10%, transparent);
+    z-index: 1;
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.navbar-left img{
+    width: 100px;
+}
+
+.navbar-left ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+}
+.navbar-left ul>li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+.navbar-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+}
+
+.navbar-profile .dropDown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    width: max-content;
+    border-radius:2px ;
+    text-decoration: underline;
+    padding: 10px 10px;
+    background-color: #191919;
+    display: none;
+}
+
+.navbar-profile .dropDown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.navbar-profile:hover .dropDown{
+    display: block;
+} 
+
+
+
+
+
+    
