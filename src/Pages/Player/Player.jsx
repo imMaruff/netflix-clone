@@ -1,10 +1,10 @@
 import React from 'react'
 import './Player.css'
-
+import back_Arrow from '../../assets/assets/back_arrow_icon.png'
 function Player(){
     return(
         <div>
-            <h1>Player Page</h1>
+            
         </div>
     )
 }

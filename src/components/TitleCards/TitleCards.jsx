@@ -6,7 +6,7 @@ import cards_data from '../../assets/assets/cards/Cards_data.js';
 
 
 function TitleCards({ title, category }) {
-
+    
     const [apiData,setApiData] = useState([]);
     const cardsRef = useRef();
 
@@ -14,7 +14,7 @@ function TitleCards({ title, category }) {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ODMzNTgxZjM1ZmFkMjhhOWRiOTYxZTZiNDFjYTUyNyIsIm5iZiI6MTc1MjU5NjkwMy40OTIsInN1YiI6IjY4NzY4MWE3YWFmNTU3MGQ0MWEyNDRiYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RgFxGhFXUf4QppVo9HPPh8pfqCSHkYWGAlGUPtQvXoQ'
+            Authorization: import.meta.env.REACT_APP_API_KEY
         }
     };
 
