@@ -1,15 +1,15 @@
-.login{
+.login {
     height: 100vh;
-    background-image: linear-gradient(#0000007e,#0000007e),url(/background_banner.jpg);
+    background-image: linear-gradient(#0000007e, #0000007e), url(/background_banner.jpg);
     padding: 20px, 8%;
 }
 
-.login-logo{
+.login-logo {
     width: 150px;
 
 }
 
-.login-form{
+.login-form {
     width: 100%;
     max-width: 450px;
     background: rgba(0, 0, 0, 0.75);
@@ -17,33 +17,34 @@
     padding: 60px;
     margin: auto;
 }
-.login-form h1{
+
+.login-form h1 {
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 28px;
 }
 
-.login-form input{
+.login-form input {
     width: 100%;
     background: #333;
     color: white;
-    margin:12px 0;
+    margin: 12px 0;
     outline: 0;
     border: 0;
     border-radius: 4px;
-    padding: 16px 20px; 
+    padding: 16px 20px;
     font-size: 15px;
     font-weight: 500;
     box-sizing: border-box;
-    
+
 }
 
-.login-form input::placeholder{
+.login-form input::placeholder {
     font-size: 16px;
     font-weight: 500;
 }
 
-.login-form button{
+.login-form button {
     width: 100%;
     outline: 0;
     border: 0;
@@ -57,7 +58,7 @@
     cursor: pointer;
 }
 
-.form-help{
+.form-help {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,29 +66,100 @@
     font-size: 13px;
 }
 
-.remember{
+.remember {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.remember label{
+.remember label {
     width: 100%;
 }
 
-.remember input{
+.remember input {
     width: 18px;
     height: 18px;
 }
 
-.sign-up{
+.sign-up {
     margin-top: 40px;
     color: #737373;
 }
 
-.sign-up span{
+.sign-up span {
     margin-left: 6px;
     color: #fff;
     font-weight: 500;
     cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #333;
+}
+
+.divider-text {
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.google-sign-in {
+    width: 100%;
+}
+
+.google-btn {
+    width: 100%;
+    background-color: #f7fbff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 30px;
+}
+.google-sign-in :hover {
+    opacity: 0.7;
+}
+
+.google-sign-in :active {
+    background-color: #f1f1f1;
+}
+
+.google-icon {
+     width: 20px;
+     height: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .login {
+        padding: 15px 5%;
+    }
+
+    .login-form {
+        padding: 20px;
+        margin-top: 30px;
+    }
 }
